@@ -6,7 +6,7 @@ cover-img: /assets/img/background.jpg
 ---
 ## About me
 
-![image](/assets/img/square.jpeg){: style="float: left; padding:10px"}{:width="30%"}
+![image](/assets/img/square.jpg){: style="float: left; padding:10px"}{:width="30%"}
 
 My name is **Jinhee Paeng**. I am an undergraduate student in Seoul National University (SNU). I am majoring in Mathematics, with Statistics as my double major. I am planning to graduate at June 2024, after when ongoing mandatory military service ends. Here is my [Curriculum Vitae](/pdfs/CV.pdf).
 
