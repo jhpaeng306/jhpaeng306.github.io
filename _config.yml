@@ -109,7 +109,7 @@ footer-link-col: "#404040"
 google_analytics: "G-98DFV2J80Y"
 
 # Google Tag Manager ID
-#gtm: ""
+gtm: "6355045389"
 
 # Matomo (aka Piwik) Web statistics
 # Uncomment the following section to enable Matomo. The opt-out parameter controls
