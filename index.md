@@ -8,7 +8,7 @@ cover-img: /assets/img/background.jpg
 
 ![image](/assets/img/square.jpeg){: style="float: left; padding:15px"}{:width="33%"}
 
-My name is **Jinhee Paeng**. I am an undergraduate student in Seoul National University (SNU). I am majoring in Mathematics, with Statistics as my double major. I am planning to graduate at June 2024, after when ongoing mandatory military service ends. Here is my [Curriculum Vitae](/pdfs/CV.pdf).
+My name is **Jinhee Paeng**. I am an undergraduate student in Seoul National University (SNU). I am majoring in Mathematics, with Statistics as my double major. I am planning to graduate B.S. at June 2024, and start PhD studies at Fall 2024. Here is my [Curriculum Vitae](/pdfs/CV.pdf).
 
 Academically I am interested in neural networks and emergence of intelligence, and aim to develop mathematical theories about such topics. Thus I am naturally enthusiastic at related mathematical or near-mathematical fields such as convex optimization, machine learning, PDEs and dynamical systems, stochastic processes, and data analysis.
 
