@@ -6,7 +6,7 @@ cover-img: /assets/img/background.jpg
 ---
 ## About me
 
-![image](/assets/img/square.jpeg){: style="float: left; padding:15px"}{:width="33%"}
+![image](/assets/img/square.jpeg){: style="float: left; padding:15px"}{:width="25%"}
 
 My name is **Jinhee Paeng**. I am a [ICME](https://icme.stanford.edu) Ph.D. student in Stanford University starting from September 2024. Here is my [Curriculum Vitae](/pdfs/CV.pdf).
 
@@ -34,7 +34,7 @@ Academically I am interested in neural networks and emergence of intelligence, a
 
 ## Education
 #### Stanford University: Sep 2024 - 2030 (Expected)
-* Computational & Mathematical Engineering ([ICME](https://icme.stanford.edu)) Ph.D.
+* Ph.D. in **Computational & Mathematical Engineering** ([ICME](https://icme.stanford.edu))
 
 #### Seoul National University(SNU): Mar 2018 - Aug 2024
 * B.S. in **Mathematical Sciences**
