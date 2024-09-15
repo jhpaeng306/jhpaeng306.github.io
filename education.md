@@ -4,8 +4,10 @@ title: Education
 ---
 
 ## Education
-### Seoul National University (SNU) 
-#### Undergraduate Student : March 2018 - June 2024(Expected)
+#### Stanford University: Sep 2024 - 2030 (Expected)
+* Ph.D. in **Computational & Mathematical Engineering** ([ICME](https://icme.stanford.edu))
+
+#### Seoul National University(SNU): Mar 2018 - Aug 2024
 * B.S. in **Mathematical Sciences**
 * B.S. in **Statistics** (Double Major)
 * Mandatory Military from May 2022 - Feb 2024
