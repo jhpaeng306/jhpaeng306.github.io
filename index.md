@@ -1,15 +1,14 @@
 ---
 layout: page
 title: Jinhee Paeng's Homepage
-subtitle: Mathematics and Statistics undergraduate student, SNU
+subtitle: Computational & Mathematical Engineering Ph.D. student, Stanford
 cover-img: /assets/img/background.jpg
 ---
 ## About me
 
 ![image](/assets/img/square.jpeg){: style="float: left; padding:15px"}{:width="33%"}
 
-My name is **Jinhee Paeng**. I am an undergraduate student in Seoul National University (SNU). I am majoring in Mathematics, with Statistics as my double major. I am planning to graduate B.S. at June 2024, and start my PhD studies at Fall 2024. 
-Here is my [Curriculum Vitae](/pdfs/CV.pdf).
+My name is **Jinhee Paeng**. I am a [ICME](https://icme.stanford.edu) Ph.D. student in Stanford University starting from September 2024. Here is my [Curriculum Vitae](/pdfs/CV.pdf).
 
 Academically I am interested in neural networks and emergence of intelligence, and aim to develop mathematical theories about such topics. Thus I am naturally enthusiastic at related mathematical or near-mathematical fields such as convex optimization, machine learning, PDEs and dynamical systems, stochastic processes, and data analysis.
 
@@ -34,7 +33,10 @@ Academically I am interested in neural networks and emergence of intelligence, a
 <br/>
 
 ## Education
-#### Seoul National University(SNU): Mar 2018 - Jun 2024(Expected)
+#### Stanford University: Sep 2024 - 2030 (Expected)
+* Computational & Mathematical Engineering ([ICME](https://icme.stanford.edu)) Ph.D.
+
+#### Seoul National University(SNU): Mar 2018 - Aug 2024
 * B.S. in **Mathematical Sciences**
 * B.S. in **Statistics** (Double Major)
 * Mandatory Military from May 2022 - Feb 2024
