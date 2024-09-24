@@ -22,7 +22,7 @@ Academically I am interested in neural networks and emergence of intelligence, a
 #### Coordinate-Update Algorithms can Efficiently Detect Infeasible Optimization Problems
 * Authors: **Jinhee Paeng**, Jisun Park, and Ernest K. Ryu
 * Analysis on the asymptotic behavior of Randomized Coordinate FPI without any fixed points. Proved almost sure convergence of the normalized iterates to the negative infimal displacement vector and discovered asymptotic upper bound of the variance.
-* Preprint, Under Review of JMAA, Available in [arXiv.2305.12211](https://doi.org/10.48550/arXiv.2305.12211)
+* Preprint, Under Minor revision of JMAA, Available in [arXiv.2305.12211](https://doi.org/10.48550/arXiv.2305.12211)
 * Here's a [25min Overview video](https://youtu.be/XR38uybRRuA) and [Slides](/pdfs/RC_FPI_slides.pdf) explaining this work. 
 
 #### Applications of Renormalization group method for generalized Kuramoto type models
