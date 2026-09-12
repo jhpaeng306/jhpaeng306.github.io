@@ -1,0 +1,6 @@
+# Citation counts per paper, keyed by Google Scholar publication id.
+# Only used when `enable_publication_badges.google_scholar` is true in _config.yml.
+# al-folio can regenerate this file automatically (see docs: "Google Scholar citation updates").
+metadata:
+  last_updated: ""
+papers: {}

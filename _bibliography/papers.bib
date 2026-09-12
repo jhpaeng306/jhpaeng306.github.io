@@ -1,0 +1,47 @@
+---
+---
+
+% ---------------------------------------------------------------------------
+% Publications. Each entry here becomes one item on the Publications page.
+% Extra al-folio fields you can use on any entry:
+%   abbr        = {JMAA}          venue badge shown on the left (colors/links in _data/venues.yml)
+%   selected    = {true}          also show on the home page ("selected publications")
+%   bibtex_show = {true}          adds a "BIB" button that reveals the BibTeX
+%   arxiv       = {2305.12211}    adds an "arXiv" button
+%   pdf         = {file.pdf}      adds a "PDF" button; file lives in assets/pdf/
+%   slides      = {file.pdf}      adds a "Slides" button; file lives in assets/pdf/
+%   poster      = {file.pdf}      adds a "Poster" button; file lives in assets/pdf/
+%   video       = {https://...}   adds a "Video" button
+%   html        = {https://...}   adds an "HTML" button (publisher page)
+%   abstract    = {...}           adds an "Abs" button that reveals the abstract
+%   preview     = {image.png}     thumbnail (only if enable_publication_thumbnails is true in _config.yml)
+% Entries are grouped by year, newest first.
+% ---------------------------------------------------------------------------
+
+@article{paeng2023coordinate,
+  abbr        = {JMAA},
+  bibtex_show = {true},
+  selected    = {true},
+  title       = {Coordinate-Update Algorithms can Efficiently Detect Infeasible Optimization Problems},
+  author      = {Paeng, Jinhee and Park, Jisun and Ryu, Ernest K.},
+  journal     = {Journal of Mathematical Analysis and Applications},
+  year        = {2023},
+  note        = {Preprint, under minor revision},
+  arxiv       = {2305.12211},
+  slides      = {RC_FPI_slides.pdf},
+  video       = {https://youtu.be/XR38uybRRuA},
+  abstract    = {Analysis of the asymptotic behavior of randomized coordinate fixed-point iterations (RC-FPI) without any fixed points. We prove almost sure convergence of the normalized iterates to the negative infimal displacement vector and establish an asymptotic upper bound on the variance, which yields an infeasibility detection method for randomized FPI-type algorithms.}
+}
+
+@unpublished{paeng2021renormalization,
+  abbr        = {Preprint},
+  bibtex_show = {true},
+  selected    = {true},
+  title       = {Applications of Renormalization Group Method for Generalized Kuramoto Type Models},
+  author      = {Paeng, Jinhee and Myoung, Kibeom and Lee, Seungmok and Ha, Seung Yeal and Yoon, Jaeyoung},
+  year        = {2021},
+  note        = {Preprint},
+  pdf         = {RGmethod.pdf},
+  poster      = {RGmethod_poster.pdf},
+  abstract    = {We apply the renormalization group method to the Lohe sphere model to prove that the completely synchronized state among particles with identical natural frequencies forms a stable state.}
+}

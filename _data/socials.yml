@@ -1,0 +1,10 @@
+# Social / contact links shown at the bottom of the home page, in the order listed here.
+# Supported keys include: email, github_username, scholar_userid, linkedin_username, x_username,
+# orcid_id, research_gate_profile, semanticscholar_id, dblp_url, arxiv_id, cv_pdf, rss_icon, ...
+# Full list: https://github.com/george-gca/jekyll-socials
+email: jhpaeng306@gmail.com
+github_username: jhpaeng306
+cv_pdf: /assets/pdf/CV.pdf
+# scholar_userid: XXXXXXXXXXXX # the 12-character `user=` value from your Google Scholar profile URL
+# linkedin_username: your-linkedin-id
+# orcid_id: 0000-0000-0000-0000

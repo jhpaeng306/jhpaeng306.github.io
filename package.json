@@ -1,0 +1,12 @@
+{
+  "name": "jhpaeng306.github.io",
+  "private": true,
+  "scripts": {
+    "format": "prettier . --write",
+    "lint:prettier": "prettier . --check"
+  },
+  "devDependencies": {
+    "@shopify/prettier-plugin-liquid": "^1.10.0",
+    "prettier": "^3.8.0"
+  }
+}

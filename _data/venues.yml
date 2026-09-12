@@ -1,0 +1,9 @@
+# Venue badges for publications. The key must match the `abbr` field of a BibTeX entry
+# in _bibliography/papers.bib. `url` makes the badge a link; `color` sets its background.
+
+"JMAA":
+  url: https://www.sciencedirect.com/journal/journal-of-mathematical-analysis-and-applications
+  color: "#00369f"
+
+"Preprint":
+  color: "#828282"

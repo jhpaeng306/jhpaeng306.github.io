@@ -1,0 +1,421 @@
+/*******************************************************************************
+ * Site-specific style overrides.
+ *
+ * This is the ONE place to tweak the look of the site. It is loaded last from
+ * assets/css/main.scss, so anything here wins over the theme defaults.
+ * Everything else (layout, components) comes from the al-folio gems.
+ ******************************************************************************/
+
+// --- Typography -------------------------------------------------------------
+// Apple-style system font stack: San Francisco on Mac/iOS, Segoe UI on Windows,
+// with Inter (loaded from Google Fonts, see `google_fonts` in _config.yml) as the
+// web fallback so the site looks the same everywhere.
+$site-font: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", Inter, "Segoe UI", Roboto, sans-serif;
+$site-font-mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+body {
+  font-family: $site-font;
+  font-weight: 400;
+  font-size: 1.02rem;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $site-font;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+h1 {
+  font-size: 2.2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+code,
+pre,
+kbd {
+  font-family: $site-font-mono;
+}
+
+// --- Colors -----------------------------------------------------------------
+// Accent color used for links, the active nav item, buttons and badges.
+:root {
+  --global-theme-color: #0066cc; // Apple-style link blue
+  --global-hover-color: #0066cc;
+  --global-text-color: #1d1d1f; // near-black, easier on the eyes than pure black
+  --global-text-color-light: #6e6e73;
+  --global-divider-color: rgba(0, 0, 0, 0.08);
+  --global-card-bg-color: #ffffff;
+}
+
+html[data-theme="dark"] {
+  --global-theme-color: #2997ff;
+  --global-hover-color: #2997ff;
+  --global-text-color: #f5f5f7;
+  --global-text-color-light: #a1a1a6;
+  --global-divider-color: rgba(255, 255, 255, 0.12);
+  --global-card-bg-color: #1c1c1e;
+}
+
+// --- Navigation bar ---------------------------------------------------------
+.navbar {
+  .navbar-brand {
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+
+  .navbar-nav .nav-item .nav-link {
+    font-weight: 500;
+    font-size: 0.95rem;
+  }
+
+  .navbar-nav .nav-item.active > .nav-link {
+    font-weight: 600;
+  }
+}
+
+// --- Page header ------------------------------------------------------------
+// Page titles ("about", "publications", ...) and the one-line description under them.
+.post .post-header {
+  margin-bottom: 1.5rem;
+
+  .post-title {
+    font-weight: 700;
+    letter-spacing: -0.03em;
+  }
+
+  .desc,
+  .post-description {
+    color: var(--global-text-color-light);
+    font-size: 1.05rem;
+  }
+}
+
+// --- Home page profile ------------------------------------------------------
+.profile {
+  img {
+    border-radius: 14px;
+    box-shadow: none !important; // no drop shadow: flat and clean
+  }
+
+  .more-info {
+    font-family: $site-font;
+    font-size: 0.9rem;
+    color: var(--global-text-color-light);
+  }
+}
+
+// Section headings on the home page ("news", "selected publications").
+.post article > h2 {
+  margin-top: 2.5rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--global-divider-color);
+}
+
+.post article h3,
+.post article h4 {
+  margin-top: 1.5rem;
+}
+
+// --- Publications -----------------------------------------------------------
+.publications {
+  // Year headings in the list are shown as light dividers.
+  h2.bibliography {
+    color: var(--global-text-color-light);
+    font-weight: 500;
+    font-size: 1rem;
+  }
+
+  ol.bibliography li {
+    margin-bottom: 1.5rem;
+
+    .title {
+      font-weight: 600;
+    }
+
+    // Venue badge (from `abbr` in papers.bib)
+    .abbr abbr {
+      border-radius: 6px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      padding: 0.2rem 0.5rem;
+    }
+
+    // Link buttons: small rounded pills with a subtle border.
+    .links a.btn {
+      border-radius: 999px;
+      border: 1px solid var(--global-divider-color);
+      background: transparent;
+      font-size: 0.8rem;
+      font-weight: 500;
+      padding: 0.2rem 0.75rem;
+      margin-right: 0.3rem;
+      margin-bottom: 0.3rem;
+      text-transform: none;
+
+      &:hover {
+        border-color: var(--global-theme-color);
+        background: transparent;
+      }
+    }
+  }
+}
+
+// Talks & notes list at the bottom of the publications page.
+.talks {
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  li {
+    padding: 0.6rem 0;
+    border-bottom: 1px solid var(--global-divider-color);
+  }
+
+  li:last-child {
+    border-bottom: none;
+  }
+
+  .links a {
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border: 1px solid var(--global-divider-color);
+    border-radius: 999px;
+    padding: 0.1rem 0.65rem;
+    margin: 0.35rem 0.3rem 0 0;
+    color: var(--global-text-color);
+
+    &:hover {
+      text-decoration: none;
+      border-color: var(--global-theme-color);
+      color: var(--global-theme-color);
+    }
+  }
+}
+
+// --- News -------------------------------------------------------------------
+.news table th {
+  color: var(--global-text-color-light);
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+// --- CV page ----------------------------------------------------------------
+// Vertical rhythm: the numbers below control how tight the CV looks.
+$cv-card-gap: 0.75rem; // space between cards
+$cv-card-padding: 0.9rem 1.25rem; // inside each card (top/bottom, left/right)
+$cv-entry-padding: 0.5rem; // above and below each entry
+
+.cv .card {
+  border-radius: 14px;
+  box-shadow: none;
+  border: 1px solid var(--global-divider-color);
+  margin-top: $cv-card-gap !important;
+  padding: $cv-card-padding !important;
+
+  .card-title {
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.35rem;
+  }
+
+  .list-group-item {
+    padding: $cv-entry-padding 0;
+
+    h6 {
+      margin-bottom: 0.15rem;
+      line-height: 1.4;
+    }
+
+    .row > div {
+      margin-top: 0 !important;
+    }
+
+    p {
+      margin-bottom: 0.15rem;
+    }
+
+    // Year range: a quiet grey pill instead of the theme-colored uppercase badge.
+    .badge {
+      background-color: rgba(128, 128, 128, 0.12) !important;
+      color: var(--global-text-color-light) !important;
+      border-radius: 6px;
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0;
+      text-transform: none !important;
+      padding: 0.25rem 0.55rem;
+    }
+
+    // Location under the year: small muted text, icon in the same grey.
+    p.location {
+      font-size: 0.78rem;
+      color: var(--global-text-color-light);
+      white-space: normal;
+      margin: 0.35rem 0 0;
+
+      i.iconlocation {
+        color: var(--global-text-color-light);
+        font-size: 0.72rem;
+      }
+    }
+
+    // Titles and sub-lines inside an entry
+    h6.title {
+      font-size: 1rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+    }
+
+    h6 {
+      color: var(--global-text-color);
+    }
+
+    ul.items {
+      margin-top: 0.25rem;
+      margin-bottom: 0;
+      color: var(--global-text-color);
+      line-height: 1.5;
+
+      li {
+        margin-bottom: 0.1rem;
+      }
+    }
+  }
+}
+
+// Year column: fixed narrow width so the text sits close to it (the theme uses a
+// 2/12 grid column, which leaves a large gap). Also left-aligned instead of centered.
+.date-column {
+  transform: none;
+}
+
+.cv .list-group-item .row {
+  > .col-md-2 {
+    flex: 0 0 96px;
+    max-width: 96px;
+    text-align: left !important;
+  }
+
+  > .col-md-10 {
+    flex: 1 1 0;
+    max-width: none;
+  }
+
+  .ml-md-4 {
+    margin-left: 0.25rem !important;
+  }
+}
+
+// Table of contents on the CV page: on wide screens it sits in the right margin,
+// OUTSIDE the content column, so the CV keeps the same width as every other page.
+// On narrower screens it is hidden (the section anchors and the PDF icon still work).
+.container:has(#toc-sidebar) {
+  position: relative;
+
+  > .row > .col-sm-9 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  > .row > .col-sm-3 {
+    display: none;
+  }
+}
+
+$toc-width: 150px; // width of the margin column
+$toc-min-viewport: 1080px; // below this the TOC is hidden (content would have to shrink)
+
+// Between $toc-min-viewport and the fully-symmetric width, the page content is nudged a bit
+// to the left so the TOC still fits in the right margin.
+@media (min-width: 1080px) and (max-width: 1259.98px) {
+  .container:has(#toc-sidebar) {
+    margin-left: calc((100vw - 900px - #{$toc-width}) / 2);
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 1080px) {
+  .container:has(#toc-sidebar) > .row > .col-sm-3 {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 100%;
+    width: $toc-width;
+    max-width: none;
+    flex: none;
+    padding: 0 0 0 1.25rem;
+  }
+
+  // "CV" download link (inserted by the script in _pages/cv.md), pinned above the list.
+  // Its left edge lines up with the TOC's vertical bar and "CV" with the entry text;
+  // its width roughly matches the longest TOC entry. Adjust `width` if you rename sections.
+  #cv-download {
+    position: sticky;
+    top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 5.2rem;
+    box-sizing: border-box;
+    margin: 0 0 0.8rem 0.8rem; // 0.8rem = the TOC list's left padding (where the bar sits)
+    padding: 0.2rem 0.5rem 0.2rem 0.4rem; // 0.4rem = the TOC link's left padding (where text starts)
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--global-text-color);
+    border: 1px solid var(--global-divider-color);
+    border-radius: 999px;
+
+    svg {
+      flex: none;
+      width: 14px;
+      height: 14px;
+      color: var(--global-text-color-light);
+    }
+
+    &:hover {
+      text-decoration: none;
+      color: var(--global-theme-color);
+      border-color: var(--global-theme-color);
+
+      svg {
+        color: var(--global-theme-color);
+      }
+    }
+  }
+
+  #toc-sidebar {
+    top: 8rem; // below the download link
+    overflow: visible !important; // never show a scroll bar; the list is short
+    max-height: none !important;
+    height: auto !important;
+
+    .toc-link {
+      color: var(--global-text-color-light);
+      font-size: 0.82rem;
+    }
+
+    .is-active-link {
+      color: var(--global-theme-color);
+      font-weight: 600;
+    }
+  }
+}

@@ -1,0 +1,178 @@
+# -----------------------------------------------------------------------------
+# CV page content (rendered at /cv/ by the al_folio_cv plugin).
+#
+# How it renders:
+#   - "Contact Information" comes from name / label / email / location.
+#   - Every key under `sections:` becomes a card with that title, in the order listed here,
+#     except that `Experience` and `Volunteer` are merged into one "Experience" card and
+#     sorted by date automatically.
+#   - Section titles that get special formatting: Education, Experience, Volunteer, Awards,
+#     Publications, Skills, Languages, Interests, Certificates, Projects, References.
+#   - Any OTHER title (e.g. "Teaching", "Activities") is a generic list: each entry is either
+#       - label: Bold text
+#         details: plain text after the colon
+#     or
+#       - bullet: a bullet line (Markdown allowed)
+#   - Dates: use YYYY or YYYY-MM-DD; only the year is displayed. Omit end_date for "Present".
+# -----------------------------------------------------------------------------
+
+cv:
+  name: Jinhee Paeng
+  label: Ph.D. student, Computational & Mathematical Engineering (ICME), Stanford University
+  email: jhpaeng306@gmail.com
+  location: Stanford, CA
+
+  sections:
+    Education:
+      - institution: Stanford University
+        location: Stanford, CA
+        url: https://icme.stanford.edu
+        area: Computational & Mathematical Engineering (ICME)
+        studyType: Ph.D.
+        start_date: 2024-09-01
+        # no end_date -> shown as "Present"
+        highlights:
+          - Expected 2030.
+
+      - institution: Seoul National University
+        location: Seoul, Korea
+        area: Mathematical Sciences and Statistics (double major)
+        studyType: B.S.
+        start_date: 2018-03-01
+        end_date: 2024-08-31
+        highlights:
+          - "Mandatory military service: May 2022 – Feb 2024."
+          - "[Undergraduate coursework](/assets/pdf/Coursework.pdf) (courses and topics covered)."
+
+      - institution: Gyeonggi Science High School for the Gifted
+        location: Suwon, Korea
+        area: Science and mathematics
+        studyType: High school
+        start_date: 2015-03-01
+        end_date: 2018-02-28
+
+    Experience:
+      - company: Ryu Optimization Group, Department of Mathematics, SNU
+        position: Undergraduate researcher
+        location: Seoul, Korea
+        start_date: 2022-01-01
+        end_date: 2024-08-31
+        summary: "Advisor: Prof. Ernest K. Ryu"
+        highlights:
+          - Asymptotic behavior of randomized coordinate fixed-point iterations (RC-FPI) without fixed points.
+          - Proved almost sure convergence of the normalized iterate using the Robbins–Siegmund quasi-martingale theorem.
+          - Discovered a tight upper bound on the limit supremum of the variance of the normalized iterate.
+          - Developed an infeasibility detection method for randomized FPI-type algorithms and extended the result to general M-norms (e.g. decentralized optimization solvers).
+
+      - company: SNU Quantum Research Team, Department of Physics, SNU
+        position: Student researcher
+        location: Seoul, Korea
+        start_date: 2022-09-01
+        end_date: 2023-05-31
+        summary: "Advisor: Prof. Sunghoon Jung"
+        highlights:
+          - Quantum teleportation with quantum information theory. Described a necessary condition of generalized quantum teleportation in the language of quantum entropy; reviewed prior work on fidelity estimation and teleportation with non-maximally entangled qubits.
+
+      - company: HYKE Research Group, Department of Mathematics, SNU
+        position: Undergraduate researcher
+        location: Seoul, Korea
+        start_date: 2021-03-01
+        end_date: 2021-12-31
+        summary: "Advisor: Prof. Seung-Yeal Ha"
+        highlights:
+          - Application of the renormalization group method on the Lohe sphere model. Proved that the completely synchronized state among particles with identical natural frequencies forms a stable manifold; developed lemmas on the integration of matrix exponentials via Jordan form. 2021 Undergraduate Research Program, SNU Faculty of Liberal Education.
+          - Estimation of the spectral density function using the maximum entropy rate. Reviewed AR(p) processes and their spectral density; covered Burg's theorem and its application to spectral estimation. Spring 2021 Undergraduate Research Internship, SNU College of Natural Sciences.
+
+      - company: NCIA (Numerical Computing & Image Analysis Lab), Department of Mathematics, SNU
+        position: Undergraduate research intern
+        location: Seoul, Korea
+        start_date: 2020-11-01
+        end_date: 2021-03-31
+        summary: "Advisor: Prof. Myungjoo Kang"
+        highlights:
+          - Comparison between the Chan–Vese model and normalized cut for image segmentation across various image settings. Winter 2020 Undergraduate Research Internship, SNU College of Natural Sciences.
+
+      - company: Software Maestro, Korean Ministry of Science and ICT
+        position: Trainee
+        location: Seoul, Korea
+        start_date: 2020-04-01
+        end_date: 2020-12-31
+        highlights:
+          - Developed an AI that quantifies a user's concentration by recognizing facial expressions through a web camera; implemented with WebRTC as an AI coach that adjusts break sessions for online study/work groups.
+
+    Teaching:
+      - label: Teaching assistant
+        details: "Mathematical Foundations of Deep Neural Networks (Fall 2021), lectured by Prof. Ernest K. Ryu, SNU. Held office hours in English."
+      - label: Tutoring
+        details: "Python basics and mathematical modeling (Summer 2020), a 10-week course for SNU undergraduates through the Undergraduate Major Tutor School."
+      - label: Educational outreach
+        details: "Talk-Talk Science Mentoring, GLEAP (2019–2021); Natural Science Camp, GLEAP (Summer 2019); Education Outreach for Free Semester Classes, Korean Ministry of Education (Fall 2018); Science Outreach Volunteers, SNU College of Natural Sciences (Summer 2018)."
+
+    Awards:
+      - title: The National Presidential Science Scholarship
+        date: "2018"
+        awarder: Korea Student Aid Foundation
+        summary: 2018–2021, 8 semesters.
+
+      - title: "Undergraduate Research Program: Top 8"
+        date: "2022"
+        awarder: SNU Faculty of Liberal Education
+
+      - title: "SNU CNS Model Student Award"
+        date: "2021"
+        awarder: SNU College of Natural Sciences
+
+      - title: "Dean's List"
+        date: "2021"
+        awarder: SNU College of Natural Sciences
+        summary: 2018–2021.
+
+      - title: "QHack 2023 quantum computing coding challenge: Third Place"
+        date: "2023"
+        awarder: Xanadu
+
+      - title: "University Students Contest of Mathematics: Silver Medal"
+        date: "2018"
+        awarder: Korean Mathematical Society (mathematics major division)
+
+      - title: "Education Outreach for Free Semester Classes: Top Prize"
+        date: "2018"
+        awarder: Korean Ministry of Education
+        summary: Team of six members.
+
+      - title: "International Mathematical Modeling Challenge (IMMC): Meritorious Prize (2nd Prize)"
+        date: "2017"
+        awarder: COMAP with NeoUnion ESC Organization
+        url: http://immchallenge.org/Contests/2017/awards/index.html
+        summary: Team leader; selected as the representative of South Korea; one of the 4 teams invited to the awards ceremony.
+
+      - title: "International Mathematical Modeling Challenge (IMMC): Meritorious Prize (2nd Prize)"
+        date: "2016"
+        awarder: COMAP with NeoUnion ESC Organization
+        summary: Selected as the representative of South Korea.
+
+    Activities:
+      - label: GLEAP (2019–2021)
+        details: "Recognized student organization at SNU College of Natural Sciences. Academic activities (monthly seminar, exchanges with STEM, KPF of KAIST, and National Taiwan University), educational outreach (Talk-Talk Mentoring, Natural Science Camp), public lectures (Natural Science Concert, monthly science column, science card-news). Leader of the Design and Publicity Task Force (2020); designer of the current GLEAP logo."
+      - label: Student council
+        details: "Student President of the SNU Department of Mathematical Sciences (2020); Student Council of the Department of Mathematical Sciences (2018–2020); Student Council of the College of Natural Sciences (2018)."
+      - label: SQRT, SNU Quantum Research Team (2022–2023)
+        details: "Student academic club in quantum computing; one of the founding members."
+      - label: IBM Qubit by Qubit (2020–2021)
+        details: "Quantum computing online course by IBM Quantum; IBM Quantum Spring Challenge 2022."
+      - label: MASTA (2018–2019)
+        details: "Math & Statistics students' dance club; leader of the club in 2019."
+
+    Skills:
+      - name: Programming
+        keywords: [Python, R, C, C++, MATLAB]
+
+    Languages:
+      - language: Korean
+        fluency: Native
+      - language: English
+        fluency: Fluent
+
+    Interests:
+      - name: Research interests
+        keywords: [neural networks, convex optimization, deep learning theory, data analysis, PDEs, stochastic processes, mathematical biology]

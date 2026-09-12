@@ -1,0 +1,7 @@
+# Optional: turn coauthor names in the publication list into links.
+# The key is the coauthor's last name in lowercase; `firstname` lists the spellings used in papers.bib.
+# Example:
+#
+# "ryu":
+#   - firstname: ["Ernest K.", "Ernest", "E. K."]
+#     url: https://ernestryu.com

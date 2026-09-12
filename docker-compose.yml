@@ -1,0 +1,15 @@
+# Local preview with Docker (no Ruby install needed):
+#   docker compose up
+# then open http://localhost:8080 — edits to files are picked up automatically.
+# Uses the prebuilt al-folio image from Docker Hub.
+services:
+  jekyll:
+    image: amirpourmand/al-folio:latest
+    command: /srv/jekyll/bin/entry_point.sh
+    ports:
+      - 8080:8080
+      - 35729:35729
+    volumes:
+      - .:/srv/jekyll
+    environment:
+      - JEKYLL_ENV=development
